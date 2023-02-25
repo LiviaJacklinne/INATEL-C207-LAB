@@ -1,0 +1,41 @@
+• Controle de Acesso
+GRANT -> da acesso
+REVOKE -> remove acesso
+
+INSERT -> inserir
+UPDATE -> alterar
+DELETE -> deletar
+SELECT -> selecionar(ver)
+
+CREATE -> criar tabela
+ALTER -> alterar tabela
+DROP -> dropar tabelas
+TRIGGER ->
+CREATE ROUTINE ->
+CRIATE VIEWS ->
+
+ALL -> dá todos os privilégios
+GRANT OPTION -> pode dar privilégio
+USAGE -> só pode acessar a tabela
+
+OBS: Para permitir o privilégio em todos os bancos e todas as tabelas
+usamos -> *.*
+
+• Alter e Drop
+CREATE -> Cria tabela
+USE -> Usa a tabela
+ON UPDATE/ON DELETE -> determina o que fazer ao se excluir a tabela da chave extrangeira
+NO ACTION -> nada será feito
+SET NULL -> o valor da chave estrangeira sera null
+CASCADE -> a alteração na tabela inicial se extendo ao registro da tabela com a chave estrangeira 
+DROP -> pode apagar uma linha, uma coluna, uma tabela ou um banco
+ALTER -> Altera a tabela em um banco
+ADD -> adiciona uma coluna na tabela
+CHANGE -> altera o nome ou o tipo de uma coluna da tabela
+
+- Inserção de chave estrangeira 
+	CONSTRAINT fk_nomeDaChave # Nome da Chave Estrangeira
+		FOREIGN KEY 	
+		REFERENCES tabela(id) # Nome da tabela e da seu chave primaria 
+		ON DELETE CASCADE
+		ON UPDATE SET NULL

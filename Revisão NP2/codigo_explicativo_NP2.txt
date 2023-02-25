@@ -1,0 +1,14 @@
+1) casinha > file > new model > add diagram;
+2) selecionar a tabela e ir construindo;
+3) uma tavela pode se relacionar a si mesma; 
+4) ao ligar uma tabela na outra aparece outra tabela, que pode ser alterada, seja o nome ou atributos solicitados;
+5) a ligação é feita do "objeto" para "quem possui"; Se for 1:N, primeiro clica em 1, depois em N;
+6) linha pontilhada compartilha a chave primaria. Linha continua é chave unica. 
+7) para salvar o arquivo BWM > database > forward engineer > next ++ > quando aparecer o código, clica pra salvar > next > close
+8) apagar os SET do inicio e do final do código;
+9) apagar os ENGINE e INDEX;
+
+OBS: 
+PK > primary kay
+NN > not null
+AI > auto incremento
